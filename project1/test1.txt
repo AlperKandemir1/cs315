@@ -1,0 +1,8 @@
+^part a^
+
+set sets;
+sets= read('set_list.txt');
+
+ if(set=={}) display 'set is empty' else display sets; 
+
+

@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+x = "x of global"; 
+y = "y of global";
+function foo () {
+    alert( " \n foo x: " + x + ", y: " + y );
+    x = "x in foo" ;
+    var y = "y in foo" ;
+    alert ( "In foo x: " + x + ", y: " + y );
+    
+    function foo1 () {
+        var x ="x in foo1";
+        y = "y in foo1" ;
+        alert ( "In foo1: " + x + ", " + y );
+        function foo2 () {
+            y = "y in foo2" ;
+            alert( "In foo2 x: " + x + ", y: " + y );
+        }
+        foo2 ();
+        alert( "End foo2 in foo1 x: " + x + ", y: " + y );
+        foo3 ();
+        alert( "End foo3 in foo1 x: " + x + ", y: " + y );
+    }
+    function foo3 () {
+        
+        y = "y in foo3" ;
+        alert( "In foo3 x: " + x + ", y: " + y );
+        
+    }
+    
+    foo1 ();
+    alert( "End foo1 in foo x: " + x + ", y: " + y );
+    foo3 ();
+    alert( "End foo3 in foo x: " + x + ", y: " + y );
+}
+foo ();
+alert( "In global x: " + x + ",y: " + y );
+
+{
+    let z = "z block scope" ; //block scope
+}
+// alert ( " In global z: "+ z ); error
+
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+^part c^
+
+int test(set set1,int remove){
+
+	set1.del(remove);
+	display set1;
+	set set2;
+	set2=read('set.txt');
+	int remove2;
+	remove2=5;
+	set2.del(remove2);
+	display set2;
+}

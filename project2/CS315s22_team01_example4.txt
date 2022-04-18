@@ -1,0 +1,100 @@
+START
+^^this is test4 that includes complex structure;
+int agePlus(int age){
+int initial;
+initial=0;
+while(age <> initial){
+age++;
+}end;
+RETURN initial;
+};
+
+str name(str name,str surname){
+display name;
+display surname;
+RETURN name;
+};
+
+ch valid(ch check){
+if(check=="x"){ 
+display 'not authorized';
+} 
+else{
+display 'authorized';
+check="y";};
+RETURN check;
+};
+set fill(set set1, int i){
+for(i = 0 :: i < 10 :: i + 1){
+set1.insert(i);
+}end;
+RETURN set1;
+};
+
+void print(){
+display 'WELCOME TO SYSTEM';
+};
+
+void print(str text){
+display text;
+};
+
+^^empty set;
+set set1;
+set1=intset {};
+
+int i;
+fill(set1,i);
+str hello;
+hello='hello human';
+print(hello);
+
+
+
+^^prmitive test;
+int key;
+key=5;
+set primitive;
+primitive = intset{};
+fill(primitive,i);
+set primitive2;
+primitive2 = charset{"a","k","z","1"};
+ch newCh;
+newCh = "x";
+primitive2.insert(x);
+primitive.max();
+primitive.min();
+primitive.avg();
+primitive.sum();
+primitive.mul();
+primitive.cardinality();
+primitive.dot_product(primitive2);
+primitive.cross_product(primitive2);
+primitive.abs();
+primitive.find(key);
+primitive.flush();
+primitive.insert(key);
+primitive.del(key);
+primitive.size();
+key++;
+primitive.insert(key);
+key--;
+to key;
+primitive.insert(key);
+int newvalue;
+newvalue=123;
+primitive.change(newvalue,0);
+
+int a;
+a=1;
+switch (a)
+    case a==1:
+        a = 5; 
+        cut
+    case a==2:
+        a = 0; 
+        cut
+    default:
+	a = 10; cut;
+
+STOP

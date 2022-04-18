@@ -1,0 +1,28 @@
+START
+^^this example3;
+
+set test(set set1,int remove){
+
+	set1.del(remove);
+	RETURN set1;
+};
+
+
+set set1;
+set set2;
+
+set1= intset {1,2,3,4,5};
+set2= read('set2.txt');
+
+int a;
+a=1;
+int b;
+b=6;
+^^func call;
+set1=test(set1,a);
+display set1;
+
+set2= test(set2,b);
+display set2;
+
+STOP

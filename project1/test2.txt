@@ -1,0 +1,23 @@
+^part b^
+
+
+set set1;
+set set2;
+set set3;
+
+set1={1,2,3,4,5};
+set2={6,7,8,9,10};
+set3=set1#set2;
+
+
+display set3;
+
+write(set3 in 'ex.txt');
+
+
+del_set set1;
+del_set set2;
+del_set set3;
+
+
+

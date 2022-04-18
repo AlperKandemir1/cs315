@@ -1,0 +1,10 @@
+START
+^^this is example1;
+set sets;
+sets= read('set_list.txt');
+if(sets=={}){ 
+display 'set is empty';
+} 
+else{display sets;
+};
+STOP
